@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+
+    <header>
+        <section>
+            <div class="relative">
+                <!-- Background Image -->
+                <div class="h-60 bg-cover bg-center" style="background-image: url('img/bg.jpg');"></div>
+
+                <!-- Navbar and Overlay -->
+                <div class="absolute inset-0 flex flex-col justify-between items-center text-white">
+                    <!-- Navbar -->
+                    <nav class="w-full p-4 flex justify-between items-center bg-opacity-50 bg-black">
+                        <!-- Logo/Brand Name -->
+                        <div class="text-xl font-bold">ABHINAV HOTEL</div>
+
+                        <!-- Hamburger Icon (for mobile) -->
+                        <div class="lg:hidden flex items-center">
+                            <button id="hamburger-icon" class="text-white focus:outline-none">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Desktop Navigation Menu -->
+                        <div class="hidden lg:flex space-x-8">
+                            <a href="#home" class="hover:text-gray-300">Home</a>
+                            <a href="#menu" class="hover:text-gray-300">Menu</a>
+                            <a href="#contact" class="hover:text-gray-300">Contact</a>
+                        </div>
+                    </nav>
+
+                    <!-- Overlay and Text -->
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                        <h1 class="text-3xl font-bold">ABHINAV HOTEL</h1>
+                        <p class="text-lg">Enjoy our delicious plates</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Menu (Initially Hidden) -->
+                <div id="mobile-menu" class="lg:hidden bg-black text-white w-full px-4 py-6 space-y-4 hidden">
+                    <a href="#home" class="block">Home</a>
+                    <a href="#menu" class="block">Menu</a>
+                    <a href="#contact" class="block">Contact</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- <header> -->
+    <!-- <section> -->
+
+    <!-- <div class="relative"> -->
+    <!-- Background Image -->
+    <!-- <div class="h-60 bg-cover bg-center" style="background-image: url('img/bg.jpg');"></div> -->
+    <!-- Overlay and Text -->
+    <!-- <div class="absolute inset-0 flex flex-col justify-center items-center text-white"> -->
+    <!-- <h1 class="text-3xl font-bold">ABHINAV HOTEL</h1>
+                    <p class="text-lg">Enjoy our delicious plates</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+    <!-- </header> -->
+
+    <main class="max-w-4xl mx-auto">
+
+        <section id="hero"
+            class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40">
+
+        </section>
+        <div class="text-center my-6">
+            <h2 class="text-4xl font-bold">BEVERAGES & BREADS</h2>
+            <div class="w-32 mx-auto border-t-2 border-gray-400 mt-2"></div>
+            <div class="w-32 mx-auto border-t-8 border-gray-400 mt-2"></div>
+        </div>
+
+        <div class="text-center my-6">
+
+            <div id="menu-items" class="container mx-auto px-4 space-y-6">
+                <!-- Tea Item -->
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/tea.jpg" alt="Tea" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">TEA</h3>
+                            <!-- <p class="text-gray-600 text-sm">ചായ</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹10</p>
+                </div>
+
+                <!-- Coffee Item -->
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/coffee.jpeg" alt="Coffee" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">COFFEE</h3>
+                            <!-- <p class="text-gray-600 text-sm">കോഫി</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹20</p>
+                </div>
+
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/chapathy.jpg" alt="Coffee" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">CHAPATHY</h3>
+                            <!-- <p class="text-gray-600 text-sm">കോഫി</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹20</p>
+                </div>
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/orotti.jpg" alt="Coffee" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">OROTTI</h3>
+                            <!-- <p class="text-gray-600 text-sm">കോഫി</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹20</p>
+                </div>
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/appam.jpg" alt="Coffee" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">APPAM</h3>
+                            <!-- <p class="text-gray-600 text-sm">കോഫി</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹20</p>
+                </div>
+                <div class="menu-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/pathiri.jpg" alt="Coffee" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-lg font-semibold  dark:text-white">PATHIRI</h3>
+                            <!-- <p class="text-gray-600 text-sm">കോഫി</p> -->
+                        </div>
+                    </div>
+                    <p class="text-lg font-bold">₹20</p>
+                </div>
+            </div>
+
+
+            <div class="freesearch w-full my-6">
+                <div class="search-box flex justify-center">
+                    <input
+                        class="search-text border border-gray-300 rounded-md px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white"
+                        id="search-input" type="text" placeholder="Search..." onchange="filterItems()">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+    </main>
+
+    <div class="fixed bottom-6 right-6">
+        <button id="dark-mode-toggle" class="p-2 bg-gray-800 text-white rounded-full">
+            🌙
+        </button>
+    </div>
+
+    <script>
+        // function filterItems() {
+        //     const searchInput = document.getElementById("search-input").value.toLowerCase();
+        //     const menuItems = document.querySelectorAll("#menu-items .menu-item");
+        //     console.log(searchInput);
+        //     console.log(menuItems); 
+
+        //     menuItems.forEach(item => {
+        //         const itemName = item.querySelector("h3").textContent.toLowerCase();
+        //         if (itemName.includes(searchInput)) {
+        //             item.style.display = "flex"; 
+        //         } else {
+        //             item.style.display = "none"; 
+        //         }
+        //     });
+        // }
+
+
+        // function filterItems() {
+        //     const searchInput = document.getElementById("search-input").value.toLowerCase();
+        //     const menuItems = document.querySelectorAll("#menu-items .menu-item");
+
+        //     // Reset all items (optional if you want to clear previous focus/highlight)
+        //     menuItems.forEach(item => {
+        //         item.style.border = ""; // Remove any previous border styling
+        //         item.style.backgroundColor = ""; // Remove any background color changes
+        //     });
+
+        //     let foundItem = false;
+
+        //     menuItems.forEach(item => {
+        //         const itemName = item.querySelector("h3").textContent.toLowerCase();
+
+        //         if (itemName.includes(searchInput)) {
+        //             // Apply focus or highlight effect here
+        //             item.style.border = "2px solid blue"; // Border to highlight the item (you can customize)
+        //             item.style.backgroundColor = "rgba(0, 0, 255, 0.1)"; // Optional background color change
+
+        //             // Scroll the item into view if necessary
+        //             item.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        //             foundItem = true; // Mark that we found a matching item
+        //         }
+        //     });
+
+        //     if (!foundItem) {
+        //         alert("No items found matching your search.");
+        //     }
+        // }
+
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check if the user prefers dark mode from localStorage or prefers based on system
+        if (localStorage.getItem('dark-mode') === 'true') {
+            htmlElement.classList.add('dark');
+        } else if (localStorage.getItem('dark-mode') === 'false') {
+            htmlElement.classList.remove('dark');
+        }
+
+        // Toggle the dark mode when the button is clicked
+        darkModeToggle.addEventListener('click', () => {
+            // Toggle the dark class on the <html> element
+            htmlElement.classList.toggle('dark');
+
+            // Save the user's dark mode preference in localStorage
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('dark-mode', 'true');
+            } else {
+                localStorage.setItem('dark-mode', 'false');
+            }
+        });
+
+
+        function filterItems() {
+            const searchInput = document.getElementById("search-input").value.toLowerCase();
+            const menuItems = document.querySelectorAll("#menu-items .menu-item");
+            menuItems.forEach(item => {
+                const itemNameElement = item.querySelector("h3");
+                itemNameElement.style.backgroundColor = "";
+            });
+
+            let foundItem = false;
+
+            menuItems.forEach(item => {
+                const itemNameElement = item.querySelector("h3");
+                const itemName = itemNameElement.textContent.toLowerCase();
+
+                if (itemName.includes(searchInput)) {
+
+                    itemNameElement.style.backgroundColor = "rgba(0, 0, 255, 0.1)";
+
+                    item.scrollIntoView({ behavior: "smooth", block: "center" });
+
+                    foundItem = true;
+                }
+            });
+
+            if (!foundItem) {
+                alert("No items found matching your search.");
+            }
+        }
+
+
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        hamburgerIcon.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
+
+</body>
+
+</html>
